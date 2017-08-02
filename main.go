@@ -67,7 +67,7 @@ func onReady(s *discordgo.Session, m *discordgo.Ready) {
 func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	// Call factory to create new game
-	game := NewGame("Apocalpyse World 2e", "basic.json")
+	game := game.NewGame("Apocalpyse World 2e", "basic.json")
 
 	// Ignore our own messages
 	if m.Author.ID == s.State.User.ID {
