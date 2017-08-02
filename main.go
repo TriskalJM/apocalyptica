@@ -1,9 +1,11 @@
 package main
 
 import (
+	"bytes"
 	"flag"
 	"fmt"
 	"github.com/bwmarrin/discordgo"
+	"github.com/gamefiend/apocalyptica/game"
 	"github.com/gamefiend/apocalyptica/moves"
 	"log"
 	"net/http"
@@ -20,18 +22,6 @@ import (
 var (
 	Intro = flag.Bool("intro", false, "Channel Introductions")
 )
-
-var Apoc = moves.LoadMoves("basic.json")
-var ApocList = MakeList(Apoc)
-var Announce = make(map[string]bool)
-
-func MakeList(mv moves.Move) []string {
-	l := make([]string, 0)
-	for _, c := range mv {
-		l = append(l, fmt.Sprintf("**%s** (%s)", c.Full, c.Name))
-	}
-	return l
-}
 
 func getBonus(s string) int {
 	reg := regexp.MustCompile(`(?P<bonus>-?\d+)`)
@@ -76,6 +66,9 @@ func onReady(s *discordgo.Session, m *discordgo.Ready) {
 // Addhandler sends a message to this function any time a message on a channel this bot is listening to is created.
 func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
+	// Call factory to create new game
+	game := NewGame("Apocalpyse World 2e", "basic.json")
+
 	// Ignore our own messages
 	if m.Author.ID == s.State.User.ID {
 		return
@@ -85,7 +78,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	switch {
 	case m.Content == "!!help":
 		help := []string{
-			"**Apocalyptica**. Apocalypse World 2e bot. !!help for instructions, !moves for moves.",
+			"**Apocalyptica**." + game.Name + " bot. !!help for instructions, !moves for moves.",
 			"To use, type !<move> <bonus>",
 			"**examples:**",
 			"* !goaggro -1",
@@ -97,9 +90,9 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	case m.Content == "!moves":
 		help := "I currently support:"
 		s.ChannelMessageSend(m.ChannelID, help)
-		s.ChannelMessageSend(m.ChannelID, strings.Join(ApocList, "\n"))
+		s.ChannelMessageSend(m.ChannelID, strings.Join(game.BasicMoveList, "\n"))
 	default:
-		moveMsg := moves.FindMove(m.Content, Apoc)
+		moveMsg := moves.FindMove(m.Content, game.BasicMoves)
 		if len(moveMsg) > 0 {
 			bonus := getBonus(m.Content)
 			result := moveMsg.Roll(bonus)
@@ -119,7 +112,7 @@ func main() {
 	//Grab Token from the Environment
 	Token := os.Getenv("DISCORD_TOKEN")
 	if len(Token) == 0 {
-		fmt.Println("environment variable DISCORD_TOKEN not set")
+		fmt.Println("Environment variable DISCORD_TOKEN not set")
 		os.Exit(1)
 	}
 	//launch a small web server
@@ -133,13 +126,13 @@ func main() {
 		fmt.Println(httpwd)
 		fs := http.FileServer(http.Dir(httpwd))
 		http.Handle("/", fs)
-		log.Printf("listening on port 8080")
+		log.Printf("Listening on port 8080")
 		http.ListenAndServe(":8080", nil)
 	}()
 	// new discord session with the provided bot token.
 	dg, err := discordgo.New("Bot " + Token)
 	if err != nil {
-		log.Println("error creating Discord session,", err)
+		log.Println("Error creating Discord session,", err)
 	}
 
 	// Register the messageCreate func for a callbackto MessageCreate events
@@ -162,7 +155,7 @@ Press Ctl-C to exit.`)
 	signal.Notify(sc, syscall.SIGINT, syscall.SIGTERM, os.Interrupt, os.Kill)
 	signals := <-sc
 	dg.Close()
-	fmt.Println("recieved ", signals)
+	fmt.Println("Received ", signals)
 	fmt.Println("Stopping....")
 	wg.Done()
 }
