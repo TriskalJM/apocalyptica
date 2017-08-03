@@ -47,6 +47,7 @@ func (m Move) Display(r, bonus int) string {
 
 type Move []struct {
 	Name string `json:"Name"`
+	Description string `json:"Description"`
 	Full string `json:"Full"`
 	Miss string `json:"Miss"`
 	Hit  string `json:"Hit"`

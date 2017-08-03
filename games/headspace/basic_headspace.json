@@ -1,0 +1,18 @@
+[
+	{
+		"Name": "!headspacemove",
+	    "Full": "*Headspace Move*",
+		"Description": "When you use a Skill with an Emotional Baggage, say what you want to do, roll 2d6 and add your rating in that Emotion’s Discipline.",
+	    "Crit": "Succeed without Emotional Complications.",
+		 "Hit": "Succeed, but pick 1 Emotional Complication based on the Baggage of the skill.",
+	    "Miss": "Succeed, but pick 2 Emotional Complications based on the Baggage of the skill.\nOR Reveal your Regret to the Cell (once per session)."
+	},
+	{
+		"Name": "!improvisedmove",
+	    "Full": "*Improvised Move*",
+		"Description": "Say what you want to attempt and roll 2d6 + Discipline of the highest current Stress Track.",
+	    "Crit": "Succeed.",
+		 "Hit": "Succeed, but the GM will also make a Move.",
+	    "Miss": "The GM tells you what happens."		
+	}
+]
