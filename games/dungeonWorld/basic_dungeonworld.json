@@ -5,7 +5,7 @@
 		"Description": "When you *attack an enemy in melee*, roll+Str.",
 	    "Crit":        "You deal your damage to the enemy and avoid their attack. At your option, you may choose to do +1d6 damage but expose yourself to the enemy’s attack.",
 		"Hit":         "You deal your damage to the enemy, and the enemy makes an attack against you.",
-	    "Miss":        "You miss the enemy!"
+	    "Miss":        "Mark XP, and the GM makes a move."
 	},
 	{
 		"Name":        "!volley",
@@ -13,15 +13,15 @@
 		"Description": "When you take aim and *shoot at an enemy at range*, roll+Dex.",
 	    "Crit":        "You have a clear shot; deal your damage.",
 		"Hit":         "Choose one (whichever you choose, you deal your damage):\n• You have to move to get the shot placing you in danger of the GM’s choice.\n• You have to take what you can get: -1d6 damage.\n• You have to take several shots, reducing your ammo by one.",
-	    "Miss":        "Your shot misses!"
+	    "Miss":        "Mark XP, and the GM makes a move."
 	},
 	{
 		"Name":        "!parley",
 		"Full":        "*Parley*",
 		"Description": "When you *have leverage on a GM character and manipulate them*, roll+Cha. (Leverage is something they need or want.)",
 		"Crit":        "They ask you for something and do it if you make them a promise first.",
-		 "Hit":        "They need some concrete assurance of your promise, right now.",
-		"Miss":        "You fail to manipulate them!"
+		"Hit":         "They need some concrete assurance of your promise, right now.",
+		"Miss":        "Mark XP, and the GM makes a move."
 	},
 	{
 		"Name":        "!defydanger",
@@ -29,46 +29,70 @@
 		"Description": "When you *act despite an imminent threat* or suffer a calamity, say how you deal with it and roll. If you do it...\n• by powering through, +Str\n• by getting out of the way or acting fast, +Dex\n• by enduring, +Con\n• with quick thinking, +Int\n• through mental fortitude, +Wis\n• with song, charm, or social grace, +Cha",
 		"Crit":        "You do what you set out to; the threat doesn’t come to bear.",
 		"Hit":         "You stumble, hesitate, or flinch: the GM will offer you a worse outcome, hard bargain, or ugly choice.",
-		"Miss":        "You fail to defy danger!"
+		"Miss":        "Mark XP, and the GM makes a move."
 	},
 	{
 		"Name":        "!defend",
 		"Full":        "*Defend*",
 		"Description": "When you *stand in defense of a person, item, or location* under attack, roll+Con.\nSo long as you stand in defense, when you or the thing you defend is attacked you may spend hold, 1 for 1, to choose an option:\n• Halve the attack’s effect or damage\n• Open up the attacker to an ally giving that ally +1 forward against the attacker\n• Deal damage to the attacker equal to your level",
 		"Crit":        "Hold 3",
-		 "Hit":        "Hold 1",
-		"Miss":        "You fail to defend!"
+		"Hit":         "Hold 1",
+		"Miss":        "Mark XP, and the GM makes a move."
 	},
 	{
 		"Name":        "!discernrealities",
 		"Full":        "*Discern Realities*",
 		"Description": "When you *closely study a situation or person*, roll+Wis.",
 		"Crit":        "Ask the GM three questions from the list below. Take +1 forward when acting on the answers.\n\n• What happened here recently?\n• What is about to happen?\n• What should I be on the lookout for?\n• What here is useful or valuable to me?\n• Who’s really in control here?\n• What here is not what it appears to be?",
-		 "Hit":        "Ask the GM one question from the list below. Take +1 forward when acting on the answer.\n\n• What happened here recently?\n• What is about to happen?\n• What should I be on the lookout for?\n• What here is useful or valuable to me?\n• Who’s really in control here?\n• What here is not what it appears to be?",
-		"Miss":        "You fail to discren realities!"
+		"Hit":         "Ask the GM one question from the list below. Take +1 forward when acting on the answer.\n\n• What happened here recently?\n• What is about to happen?\n• What should I be on the lookout for?\n• What here is useful or valuable to me?\n• Who’s really in control here?\n• What here is not what it appears to be?",
+		"Miss":        "Mark XP, and the GM makes a move."
 	},
 	{
 		"Name":        "!spoutlore",
 		"Full":        "*Spout Lore*",
 		"Description": "When you *consult your accumulated knowledge about something*, roll+Int.",
 		"Crit":        "The GM will tell you something interesting and useful about the subject relevant to your situation.",
-		 "Hit":        "The GM will only tell you something interesting—it’s on you to make it useful. The GM might ask you “How do you know this?” Tell them the truth, now.",
-		"Miss":        "You fail to spout lore!"
+		"Hit":         "The GM will only tell you something interesting—it’s on you to make it useful. The GM might ask you “How do you know this?” Tell them the truth, now.",
+		"Miss":        "Mark XP, and the GM makes a move."
 	},
 	{
 		"Name":        "!aidorinterfere",
 		"Full":        "*Aid or Interfere*",
 		"Description": "When you *help or hinder someone you have a Bond with*, roll+Bond with them.",
 		"Crit":        "They take +1 or -2, your choice.",
-		 "Hit":        "They take 1 or -2, your choice, and you also expose yourself to danger, retribution, or cost.",
-		"Miss":        "You fail to aid or interfere!"
+		"Hit":         "They take +1 or -2, your choice, and you also expose yourself to danger, retribution, or cost.",
+		"Miss":        "Mark XP, and the GM makes a move."
 	},
 	{
-		"Name": "!",
-		"Full": "**\n\n",
-		"Crit": "",
-		 "Hit": "",
-		"Miss": ""
+		"Name":        "!takewatch",
+		"Full":        "*Take Watch*",
+		"Description": "When you’re *on watch and something approaches the camp*, roll+Wis.",
+		"Crit":        "You’re able to wake the camp and prepare a response; the camp takes +1 forward.",
+		"Hit":         "You react just a moment too late; the camp is awake but hasn’t had time to prepare. You have weapons and armor but little else.",
+		"Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!undertakejourney",
+		"Full":        "*Undertake A Perilous Journey*",
+		"Description": "When you travel *through hostile territory*, choose one member of the party to act as trailblazer, one to scout ahead, and one to be quartermaster (the same character cannot have two jobs). If you don’t have enough party members or choose not to assign a job, treat that job as if it had rolled a 6. Each character with a job to do rolls+Wis.",
+		"Crit":        "If you're the quartermaster, reduce the number of rations required by one. If you're the trailblazer, reduce the amount of time it takes to reach your destination (the GM will say by how much). If you're the scout, you spot any trouble quick enough to let you get the drop on it.",
+		"Hit":         "Each role performs their job as expected: the normal number of rations are consumed; the journey takes about as long as expected; no one gets the drop on you, but you don’t get the drop on them either.",
+		"Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!supply",
+		"Full":        "*Supply*",
+		"Description": "When you go to buy something with money on hand, if it’s something readily available in the settlement you’re in, you can buy it at market price. If it’s something special, beyond what’s usually available here, or non-mundane, roll+Cha.",
+		"Crit":        "You find what you’re looking for at a fair price.",
+		"Hit":         "You’ll have to pay more or settle for something similar.",
+		"Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!carouse",
+		"Full":        "*Carouse*",
+		"Description": "When you *return triumphant and throw a big party*, spend 100 coin and roll + extra 100s of coin spent.",
+		"Crit":        "Choose 3 of the following:\n• You befriend a useful NPC.\n• You hear rumors of an opportunity.\n• You gain useful information.\n• You are not entangled, ensorcelled, or tricked.",
+		"Hit":         "Choose one of the following:\n• You befriend a useful NPC.\n• You hear rumors of an opportunity.\n• You gain useful information.\n• You are not entangled, ensorcelled, or tricked.",
+		"Miss":        "Choose one of the following:\n• You befriend a useful NPC.\n• You hear rumors of an opportunity.\n• You gain useful information.\n• You are not entangled, ensorcelled, or tricked.\n\nMark XP, and the GM makes a move."
 	}
 ]
-
