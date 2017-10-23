@@ -1,0 +1,14 @@
+{
+  "Game":
+  {
+    "Name": "NoirWorld",
+    "Author": "John Adamus",
+    "Description": "Noir World is film noir, powered by the Apocalypse. It's an RPG of emotion, tragedy, risk, and relationships.",
+    "Playbooks": [
+      { 
+        "Name": "Simple Character",
+        "Moves": "simple_playbook.json" 
+      }
+    ]
+  }
+}

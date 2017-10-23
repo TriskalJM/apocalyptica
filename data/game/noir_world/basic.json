@@ -1,0 +1,29 @@
+[ 
+		"Name":        "!checkitout",
+        "Full":        "*Check It Out*",
+        "Crit":        "The Director will tell you something important and useful about what (or who) you’re investigating.",
+        "Hit":         "Choose one of the following, and the Director will tell you what happens:\n* What you discover makes things more complicated for everyone in the Movie. (This may lead to a new Scene, but doesn’t have to.)\n*  You’re about to get in over your head and have to do something you’re going to regret. (This may lead to a new Scene, but doesn’t have to.)\n* Someone is about to offer you a choice you’re not going to like. At all. (A Role or Person can come into the current Scene.)",
+        "Miss":        "You misinterpret what you find, and it leads you into a situation where (choose one):\n* You take 1 Injury trying to get yourself out of it.\n* You pursue a completely wrong lead that will affect a relationship you have with another Hook.\n* In the next Scene you’re in, whatever you’ve misinterpreted puts you in danger."
+	},
+	{
+		"Name":        "!fightitout",
+		"Full":        "*Fight It Out*",
+		"Crit":        "You succeed, and any weapon you’re using does its full Injury.",
+		"Hit":         "You succeed, and any weapons used do half their full Injury (round up), but also either expose yourself to a counter-attack you can’t avoid OR expose someone else in the Scene (not involved in the fight) to an attack they CANNOT avoid.",
+		"Miss":        "Tell the Director what happens to make the fight more dangerous while it continues OR the Director will offer you a way out of the fight, but with a serious risk to you more than anyone else in the fight."
+	},
+	{
+		"Name":        "!talkitout",
+		"Full":        "*Talk It Out*",
+		"Crit":        "The person you’re speaking to agrees with you, for now. They may even help you, if they want.",
+		"Hit":         "You can only get what you want IF (their choice) you make a promise you’re not sure you can keep OR the other person will betray at a critical moment.",
+		"Miss":        "Your efforts backfire and the Role or Person gains something they may use immediately against you."
+	},
+	{
+		"Name":        "!helpout",
+		"Full":        "*Help Out*",
+		"Crit":        "Your help grants them a +1.",
+		"Hit":         "Your help gives them a +1, but you either put yourself in danger OR do something to make the current situation worse for both of you.",
+		"Miss":        "You’re not helpful at all, and the Director will tell you how your help didn’t pan out the way you intended AND now you’ve done something to jeopardize EVERYONE in the Scene."
+	}
+]
