@@ -1,0 +1,86 @@
+[ 
+	{
+		"Name":        "!hackandslash",
+	    "Full":        "*Hack & Slash*",
+	    "Crit":        "You deal your damage to the enemy and avoid their attack. At your option, you may choose to do +1d6 damage but expose yourself to the enemy’s attack.",
+		"Hit":         "You deal your damage to the enemy, and the enemy makes an attack against you.",
+	    "Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!volley",
+	    "Full":        "*Volley*",
+	    "Crit":        "You have a clear shot; deal your damage.",
+		"Hit":         "Choose one (whichever you choose, you deal your damage):\n• You have to move to get the shot placing you in danger of the GM’s choice.\n• You have to take what you can get: -1d6 damage.\n• You have to take several shots, reducing your ammo by one.",
+	    "Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!parley",
+		"Full":        "*Parley*",
+		"Crit":        "They ask you for something and do it if you make them a promise first.",
+		"Hit":         "They need some concrete assurance of your promise, right now.",
+		"Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!defydanger",
+		"Full":        "*Defy Danger*",
+		"Crit":        "You do what you set out to; the threat doesn’t come to bear.",
+		"Hit":         "You stumble, hesitate, or flinch: the GM will offer you a worse outcome, hard bargain, or ugly choice.",
+		"Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!defend",
+		"Full":        "*Defend*",
+		"Crit":        "Hold 3",
+		"Hit":         "Hold 1",
+		"Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!discernrealities",
+		"Full":        "*Discern Realities*",
+		"Crit":        "Ask the GM three questions from the list below. Take +1 forward when acting on the answers.\n\n• What happened here recently?\n• What is about to happen?\n• What should I be on the lookout for?\n• What here is useful or valuable to me?\n• Who’s really in control here?\n• What here is not what it appears to be?",
+		"Hit":         "Ask the GM one question from the list below. Take +1 forward when acting on the answer.\n\n• What happened here recently?\n• What is about to happen?\n• What should I be on the lookout for?\n• What here is useful or valuable to me?\n• Who’s really in control here?\n• What here is not what it appears to be?",
+		"Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!spoutlore",
+		"Full":        "*Spout Lore*",
+		"Crit":        "The GM will tell you something interesting and useful about the subject relevant to your situation.",
+		"Hit":         "The GM will only tell you something interesting—it’s on you to make it useful. The GM might ask you “How do you know this?” Tell them the truth, now.",
+		"Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!aidorinterfere",
+		"Full":        "*Aid or Interfere*",
+		"Crit":        "They take +1 or -2, your choice.",
+		"Hit":         "They take +1 or -2, your choice, and you also expose yourself to danger, retribution, or cost.",
+		"Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!takewatch",
+		"Full":        "*Take Watch*",
+		"Crit":        "You’re able to wake the camp and prepare a response; the camp takes +1 forward.",
+		"Hit":         "You react just a moment too late; the camp is awake but hasn’t had time to prepare. You have weapons and armor but little else.",
+		"Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!undertakejourney",
+		"Full":        "*Undertake A Perilous Journey*",
+		"Crit":        "If you're the quartermaster, reduce the number of rations required by one. If you're the trailblazer, reduce the amount of time it takes to reach your destination (the GM will say by how much). If you're the scout, you spot any trouble quick enough to let you get the drop on it.",
+		"Hit":         "Each role performs their job as expected: the normal number of rations are consumed; the journey takes about as long as expected; no one gets the drop on you, but you don’t get the drop on them either.",
+		"Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!supply",
+		"Full":        "*Supply*",
+		"Crit":        "You find what you’re looking for at a fair price.",
+		"Hit":         "You’ll have to pay more or settle for something similar.",
+		"Miss":        "Mark XP, and the GM makes a move."
+	},
+	{
+		"Name":        "!carouse",
+		"Full":        "*Carouse*",
+		"Crit":        "Choose 3 of the following:\n• You befriend a useful NPC.\n• You hear rumors of an opportunity.\n• You gain useful information.\n• You are not entangled, ensorcelled, or tricked.",
+		"Hit":         "Choose one of the following:\n• You befriend a useful NPC.\n• You hear rumors of an opportunity.\n• You gain useful information.\n• You are not entangled, ensorcelled, or tricked.",
+		"Miss":        "Choose one of the following:\n• You befriend a useful NPC.\n• You hear rumors of an opportunity.\n• You gain useful information.\n• You are not entangled, ensorcelled, or tricked.\n\nMark XP, and the GM makes a move."
+	}
+]

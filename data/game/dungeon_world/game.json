@@ -1,0 +1,14 @@
+{
+  "Game":
+  {
+    "Name": "DungeonWorld",
+    "Author": "Sage LaTorra and Adam Koebel",
+    "Description": "DungeonWorld is a classic fantasy adventure powered by the apocalypse.",
+    "Playbooks": [
+      { 
+        "Name": "Simple Character",
+        "Moves": "simple_playbook.json" 
+      }
+    ]
+  }
+}
