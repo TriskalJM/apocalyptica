@@ -1,0 +1,14 @@
+{
+  "Game":
+  {
+    "Name": "Headspace",
+    "Author": "Mark Richardson",
+    "Description": "A shared consciousness cyberpunk RPG, about hyper-competent operatives fighting evil corporations.",
+    "Playbooks": [
+      { 
+        "Name": "Simple Character",
+        "Moves": "simple_playbook.json" 
+      }
+    ]
+  }
+}

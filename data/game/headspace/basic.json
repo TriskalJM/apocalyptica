@@ -1,0 +1,16 @@
+[ 
+	{
+		"Name": "!headspacemove",
+	    "Full": "*Headspace Move*",
+	    "Crit": "Succeed without Emotional Complications.",
+		 "Hit": "Succeed, but pick 1 Emotional Complication based on the Baggage of the skill.",
+	    "Miss": "Succeed, but pick 2 Emotional Complications based on the Baggage of the skill.\nOR Reveal your Regret to the Cell (once per session)."
+	},
+	{
+		"Name": "!improvisedmove",
+	    "Full": "*Improvised Move*",
+	    "Crit": "Succeed.",
+		 "Hit": "Succeed, but the GM will also make a Move.",
+	    "Miss": "The GM tells you what happens."		
+	}
+]
